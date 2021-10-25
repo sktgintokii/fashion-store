@@ -41,3 +41,6 @@ test/*.js
 
 # Tmp files
 .eslintcache
+
+# Environments
+.env
