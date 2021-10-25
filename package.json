@@ -1,0 +1,36 @@
+{
+  "name": "fashion-store-sales-service",
+  "version": "1.0.0",
+  "description": "Fashion store backend service for sales",
+  "main": "src/index.ts",
+  "scripts": {
+    "start": "node dist/index.js",
+    "dev": "nodemon src/index.ts",
+    "build": "tsc",
+    "test": "yarn test",
+    "prepare": "husky install"
+  },
+  "keywords": [
+    "fashion",
+    "service",
+    "api",
+    "sales"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/express": "^4.17.13",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.1.0",
+    "@typescript-eslint/parser": "^5.1.0",
+    "eslint": "^8.1.0",
+    "husky": "^7.0.4",
+    "lint-staged": "^11.2.4",
+    "nodemon": "^2.0.14",
+    "prettier": "2.4.1",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.4.4"
+  }
+}
