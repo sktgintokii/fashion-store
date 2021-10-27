@@ -11,6 +11,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(helmet());
 
+app.use('/ping', (req, res) => res.send('pong'));
 app.use('/', indexRouter);
 
 // catch 404 and forward to error handler
@@ -20,7 +21,7 @@ app.use((req, res, next) => {
 
 // error handler
 app.use(((err, req, res, next) => {
-  res.status(err.status || 500).send('Internal Server Error');
+  res.status(err.status || 500).send(err.message || 'Internal Server Error');
 }) as ErrorRequestHandler);
 
 export default app;
